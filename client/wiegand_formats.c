@@ -8,6 +8,7 @@
 // HID card format packing/unpacking routines
 //-----------------------------------------------------------------------------
 #include "wiegand_formats.h"
+#include "string.h"
 
 bool Pack_H10301(wiegand_card_t* card, wiegand_message_t* packed){
   memset(packed, 0, sizeof(wiegand_message_t));
